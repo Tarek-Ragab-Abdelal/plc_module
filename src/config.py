@@ -1,8 +1,8 @@
 # PLC Configs
 PLC_IP = '192.168.0.1'
 PLC_PORT = 502
-SENSOR_REGISTER = 1000
-LED_REGISTER = 2000
+SENSOR_REGISTER = 0
+LED_REGISTER = 1
 
 # Backend Configs
 SERVER_URL = 'http://localhost:4000/api'

@@ -28,7 +28,7 @@ class SerialClient:
             print("PLC connection is not open.")
             return None
 
-    def control_led(self, register, value):
+    def control_digital(self, register, value):
         if self.client.is_open():
             is_written = self.client.write_single_register(register, value)
             if is_written:

@@ -29,7 +29,7 @@ class TestSerialClient(unittest.TestCase):
         self.assertEqual(value, 123)
 
     @patch('pyModbusTCP.client.ModbusClient.write_single_register')
-    def test_control_led(self, mock_write_single_register):
+    def test_control_digital(self, mock_write_single_register):
         mock_write_single_register.return_value = True
         self.serial_client.connect()
         res
